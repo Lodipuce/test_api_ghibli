@@ -10,7 +10,7 @@ app.appendChild(logo);
 app.appendChild(container);
 
 
-async function getFilmsTitles() {
+async function getFilmsData() {
     try {
         const response = await fetch('https://ghibliapi.vercel.app/films');
         if (!response.ok) {
@@ -42,7 +42,7 @@ async function getFilmsTitles() {
         console.error('Erreur lors de la récupération des films :', error);
     }   
 }
-getFilmsTitles();
+getFilmsData();
 
 
 
